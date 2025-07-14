@@ -1,1 +1,44 @@
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0061A8; /* Azul Capri */
+}
+
+#malla {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  padding: 20px;
+}
+
+.ramo {
+  background-color: #cce7ff;
+  border: 2px solid #0061A8;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.ramo:hover {
+  background-color: #b3dbff;
+}
+
+.ramo.aprobado {
+  background-color: #0061A8;
+  color: white;
+  text-decoration: line-through;
+}
+
+.ramo.bloqueado {
+  opacity: 0.5;
+  pointer-events: none;
+}
 
